@@ -5,14 +5,15 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
 }
 
 a {
   text-decoration: none;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -94,7 +95,7 @@ header {
 #info-section .container {
   width: 100%;
   height: 180px;
-  background-color: #2A2A2A;
+  background-color: #2a2a2a;
   padding-top: 56px;
   border-radius: 20px;
 }
@@ -111,7 +112,7 @@ header {
   right: 16%;
   bottom: 0;
   transform: translate(0px, 50%);
-  background-color: #ED6052;
+  background-color: #ed6052;
   border-radius: 12px;
   color: white;
   font-size: 26px;
@@ -158,11 +159,13 @@ header {
 }
 
 #sale-section .logo {
-  width: 350px;
-  height: 160px;
+  width: 319px;
+  height: 95px;
   margin: 0 auto;
-  background-image: url('src/accelerator_logo.png');
+  background-image: url("src/accelerator_logo.png");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 #sale-section h1 {
@@ -170,8 +173,10 @@ header {
 }
 
 #sale-section .title {
+  font-size: 32px;
+  margin-top: 46px;
   font-weight: 400;
-  color: #DDDDDD;
+  color: #dddddd;
 }
 
 #sale-section .training {
@@ -186,12 +191,13 @@ header {
 }
 
 #sale-section .benefits {
-  margin-top: 40px;
+  margin-top: 87px;
+  color: #f8f8f8;
 }
 
 #sale-section .benefits h3 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 32px;
 }
 
@@ -207,13 +213,15 @@ header {
 
 #sale-section .benefit-info .accelerator-image {
   width: 256px;
+  height: 256px;
   background-color: white;
-  padding: 48px;
   border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #sale-section .benefit-info .accelerator-image img {
-  width: 100%;
   object-fit: cover;
 }
 
@@ -221,42 +229,184 @@ header {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-bottom: 34px;
+  margin-bottom: 45px;
   text-align: start;
 }
 
 #sale-section .benefit-info li img {
+  width: 32px;
+  height: 32px;
   border-radius: 100%;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 
 #sale-section .benefit-title p {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 #sale-section .benefit-title span {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
 }
 
 #sale-section .pricing {
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 700;
   margin-top: 80px;
 }
 
 #sale-section .pricing .regular-price {
   text-decoration: line-through;
+  margin-bottom: 14px;
 }
 
 #sale-section .join-now {
   display: inline-block;
   margin-top: 57px;
   color: white;
-  padding: 24px 164px;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 24px 103px;
   background-color: #266053;
   border-radius: 20px;
+}
+
+#sale-section .guarantee {
+  color: white;
+  font-style: italic;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+/* ---- footer ---- */
+
+footer {
+  background: black;
+  color: white;
+}
+
+footer .content {
+  width: 1200px;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+footer #social_links {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+footer #social_links a {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer {
+  background: black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+}
+
+footer .col:first-child {
+  color: #434354;
+}
+
+footer .col h3 {
+  margin-bottom: 20px;
+}
+
+footer .col a {
+  display: block;
+  margin-bottom: 16px;
+  color: #4c5e7c;
+  text-decoration: none;
+}
+
+footer .col a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+footer .col a:last-child {
+  margin-bottom: 0;
+}
+
+footer .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer .col {
+  width: calc(25% - 22.5px);
+  /*margin-bottom: 30px;*/
+}
+
+footer svg {
+  fill: #24272e;
+}
+
+footer .logo {
+  margin-bottom: 30px;
+}
+
+footer #social_links a {
+  width: 24px;
+  fill: #434354;
+  margin-right: 30px;
+}
+
+footer .social_links_icon:last-child {
+  margin-right: 0;
+}
+
+footer .social_links_icon:hover {
+  fill: white;
+}
+
+footer .products a {
+  display: flex;
+  align-items: center;
+}
+
+footer .col a {
+  color: white;
+}
+
+footer h4 {
+  margin-bottom: 24px;
+}
+
+footer .products a svg {
+  fill: white;
+  margin-right: 6px;
+}
+
+@media (max-width: 800px) {
+  footer .content {
+    flex-direction: column;
+    width: 100%;
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  footer .col {
+    width: 100%;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--color-dark);
+  }
+
+  footer .col:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
