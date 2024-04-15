@@ -156,13 +156,13 @@ header {
   width: 720px;
   text-align: center;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 #sale-section .logo {
-  width: 319px;
-  height: 95px;
+  height: 123px;
   margin: 0 auto;
-  background-image: url("src/accelerator_logo.png");
+  background-image: url("src/crown_convention_logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -174,7 +174,7 @@ header {
 
 #sale-section .title {
   font-size: 32px;
-  margin-top: 46px;
+  margin-top: 20px;
   font-weight: 400;
   color: #dddddd;
 }
@@ -184,14 +184,22 @@ header {
   margin: 16px auto;
 }
 
-#sale-section .white-box {
+#video_container {
+  height: 405px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 32px;
+  border-radius: 8px;
+}
+
+#video_container iframe {
   width: 100%;
-  height: 390px;
-  background-color: white;
+  height: 100%;
 }
 
 #sale-section .benefits {
-  margin-top: 87px;
+  margin-top: 50px;
   color: #f8f8f8;
 }
 
@@ -225,20 +233,31 @@ header {
   object-fit: cover;
 }
 
+#sale-section .benefit-info .crown-convention-image {
+  width: 250px;
+}
+
+#sale-section .benefit-info .crown-convention-image img {
+  width: 100%;
+}
+
 #sale-section .benefit-info li {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-bottom: 45px;
+  margin-bottom: 26px;
   text-align: start;
 }
 
 #sale-section .benefit-info li img {
-  width: 32px;
-  height: 32px;
+  width: 16px;
+  height: 16px;
   border-radius: 100%;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
+
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 #sale-section .benefit-title p {
@@ -259,6 +278,7 @@ header {
 }
 
 #sale-section .pricing .regular-price {
+  font-size: 20px;
   text-decoration: line-through;
   margin-bottom: 14px;
 }
@@ -270,14 +290,15 @@ header {
   font-size: 24px;
   font-weight: 700;
   padding: 24px 103px;
-  background-color: #266053;
-  border-radius: 20px;
+  background-color: #44ADF0;
+  border-radius: 57px;
 }
 
 #sale-section .guarantee {
   color: white;
+  font-size: 20px;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 300;
   margin-top: 20px;
 }
 
@@ -350,10 +371,6 @@ footer .col {
 
 footer svg {
   fill: #24272e;
-}
-
-footer .logo {
-  margin-bottom: 30px;
 }
 
 footer #social_links a {
