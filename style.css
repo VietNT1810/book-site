@@ -26,7 +26,7 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 0;
-  background: black;
+  background: white;
   position: relative;
 }
 
@@ -61,7 +61,7 @@ header {
   padding: 10px;
   text-decoration: none;
   opacity: 0.8;
-  color: white;
+  color: black;
 }
 
 #top_menu > a:hover {
@@ -73,8 +73,8 @@ header {
 }
 
 #top_menu .button {
-  background: white;
-  color: black;
+  background: black;
+  color: white;
   border-radius: 99px;
   padding: 2px 12px;
   transition: all .3s ease-in-out;
